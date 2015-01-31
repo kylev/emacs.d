@@ -32,3 +32,13 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+;; Add a directory to our load path so that when you `load` things
+;; below, Emacs knows where to look for the corresponding file.
+(add-to-list 'load-path "~/.emacs.d/customizations")
+
+;; Set up exec-path-from-shell
+(load "shell-integration.el")
+;; Minor tweaks to the way I edit
+(load "editing.el")
+;; Pretty stuff
+(load "ui.el")
