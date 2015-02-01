@@ -3,3 +3,6 @@
 
 ;; Consistency, so avoid diff annoyance
 (setq-default require-final-newlint t)
+
+;; Highlight current line for easy finding
+(global-hl-line-mode 1)
