@@ -25,6 +25,9 @@
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
+    ;; Project-based file finding
+    projectile
+    helm
     ;; GIT!
     magit
     ))
@@ -47,5 +50,7 @@
 (load "editing.el")
 ;; Pretty stuff
 (load "ui.el")
+;; Getting around
+(load "navigation.el")
 ;; Language stuff
 (load "setup-clojure.el")
