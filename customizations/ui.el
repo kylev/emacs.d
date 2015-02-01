@@ -3,5 +3,7 @@
   (scroll-bar-mode -1))
 
 ;; Mmm, pretty.
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;(load-theme 'solarized-dark t)
+(set-default 'frame-background-mode 'dark)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized")
+(load-theme 'solarized t)
+(enable-theme 'solarized)
