@@ -4,6 +4,8 @@
 
 ;; Idiot profing
 (setq confirm-kill-emacs 'yes-or-no-p)
+;; Single user machine, no locks
+(setq create-lockfiles nil)
 
 ;; Mmm, pretty.
 (set-default 'frame-background-mode 'dark)
