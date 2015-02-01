@@ -2,6 +2,9 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
+;; Idiot profing
+(setq confirm-kill-emacs 'yes-or-no-p)
+
 ;; Mmm, pretty.
 (set-default 'frame-background-mode 'dark)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized")
