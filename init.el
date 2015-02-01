@@ -20,6 +20,11 @@
     ;; Double-pretty clojure
     clojure-mode
     clojure-mode-extra-font-locking
+    ;; colorful parenthesis matching
+    rainbow-delimiters
+    ;; integration with a Clojure REPL
+    ;; https://github.com/clojure-emacs/cider
+    cider
     ;; GIT!
     magit
     ))
@@ -42,3 +47,5 @@
 (load "editing.el")
 ;; Pretty stuff
 (load "ui.el")
+;; Language stuff
+(load "setup-clojure.el")
